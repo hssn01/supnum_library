@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position:0 50%;
+}
+
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(30deg,#ffffff,#2f6cc2a4,#ffff);
+    background-size: 300% 300%;
+    animation: color 9s ease-in-out infinite;
+
+    
+}
+.container{
+    margin: 20px 20px 100px 0px; 
+    margin-top: 200px;
+}
+.tab{
+    display: flex;
+    justify-content: flex-start;
+    align-self: start;
+    align-items: center;
+    
+
+
+}
+.Btn_add {
+    width: fit-content;
+    margin-bottom:20px;
+    background-color:#1e2849
+    ;
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+    margin-left: calc(100% - 110px);
+}
+
+.Btn_add img {
+    margin-right: 5px;
+    height: 20px;
+}
+/*tableau*/
+table {
+    border-collapse:collapse;
+    color: #404040;
+   
+    margin-left: 40px;
+    margin-right: 40px;
+}
+th {
+    font-size: 16px;
+    border-bottom: 3px solid #4768db;
+    padding: 5px 20px;
+    font-weight: 500;
+    
+}
+td {
+    font-weight: 400;
+    padding: 5px 30px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+img {
+    height: 25px;
+   
+}
+tr:nth-child(2n){
+    background-color: #f6f8f8;
+}
+tr:nth-child(2n) td {
+    border-bottom: 1px solid #e0e0e0;
+    border-top:  1px solid #e0e0e0;
+}
+/*Form CSS*/
+.form {
+    background-color: #f6f8f8;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.form form {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+.back_btn {
+    color: #1e2849;
+
+    text-decoration: 0;
+    display: flex;
+    align-items: center;
+}
+.back_btn img {
+    height: 16px;
+    margin-right:5px ;
+}
+h2 {
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.erreur_message {
+    color: red;
+    font-size: 12px;
+}
+label {
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+input{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 2px;
+}
+input:focus{
+    border: 1px solid #4768db;
+}
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: #1e2849
+;
+    border: 1px solid #1e2849
+;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+ nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: left ;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background:#1e2849;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    height:  90px;
+}
+ /* nav .logo img {
+    width: 300px;
+    cursor: pointer;
+    margin: 0 0 0 5%;
+} */
+
+ nav ul {
+    list-style: none;
+    margin-right: 80px;
+}
+
+ nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    
+}
+
+ nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 30px;
+    font-size: 25px;
+    transition: 0.1s;
+    margin-left: 10px;
+    font-weight: 100px;
+}
+
+ nav ul li a::after {
+    content: '';
+    width:0;
+    height: 2px;
+    background: #a56ab8 ;
+    display:block;
+    transition: 0.3s linear;
+    margin-left: 5px;
+}
+
+ nav ul li a:hover::after {
+    width: 100%;
+}
+
+ nav ul li a:hover {
+    color:#4768db;
+}
+nav .logo img {
+    width: 200px;
+    height: 90px;
+    cursor: pointer;
+    margin: 0 0 0 15%;
+}
+
+
+#Btn_ret{
+    margin-left: 25px;
+}
+.input-group{
+   width:  300px;
+   margin-right: 100px;
+   height: 30px;
+   margin: 40px;
+   display: flex;
+    justify-content: flex-end;
+
+}
+#liv{
+    height: 50px;
+    margin: 2px;
+    padding: 10px;
+    
+    
+}
+.tab button{
+    width: fit-content;
+    margin:20px;
+    background-color:#1e2849
+    ;
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+}
+ .tab button img {
+    margin-right: 5px;
+    height: 20px;
+ }
+.tab_btn{
+    margin-left: 25px;
+}
+.h{
+    width: 500px;
+}
